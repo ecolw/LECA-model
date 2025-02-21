@@ -26,7 +26,7 @@ Calibration and validation are crucial steps in ensuring that a model provides a
 
 ### Calibration
 
-This model structure is updated from previous land use change simulation modeling studies by incorporating the influence of landscape metrics. A comprehensive explanation of how this model works can also be found in previous studies (insert citation). The core components of the LE-CA model, including landscape metrics, Markov chain, and Genetic algorithm, are discussed below.
+This model structure is updated from previous land use change simulation modeling studies by incorporating the influence of landscape metrics. A comprehensive explanation of how this model works can also be found in previous studies (Feng and Tong, 2019; Liang et al., 2021; Lin et al., 2020; Lin et al., 2023; Liu et al., 2014; Xu et al., 2023). The core components of the LE-CA model, including landscape metrics, Markov chain, and Genetic algorithm, are discussed below.
 
 Calibration involves adjusting model parameters (such as transition probabilities in the Markov chain) to better match observed data. This process fine-tunes the model by comparing its outputs with historical land use data and making adjustments to improve prediction accuracy.
 
@@ -58,4 +58,9 @@ After preparing all the files, make sure to update the paths in the following lo
 
 ## References
 
-(Insert references here)
+- Feng Y, Tong X. Incorporation of spatial heterogeneity-weighted neighborhood into cellular automata for dynamic urban growth simulation. GISCIENCE & REMOTE SENSING 2019; 56: 1024-1045. [DOI](https://doi.org/10.1080/15481603.2019.1603187)
+- Liang X, Guan Q, Clarke KC, Chen G, Guo S, Yao Y. Mixed-cell cellular automata: A new approach for simulating the spatio-temporal dynamics of mixed land use structures. Landscape and Urban Planning 2021; 205: 103960. [DOI](https://doi.org/10.1016/j.landurbplan.2020.103960)
+- Lin J, Li X, Li S, Wen Y. What is the influence of landscape metric selection on the calibration of land-use/cover simulation models? ENVIRONMENTAL MODELLING & SOFTWARE 2020; 129. [DOI](https://doi.org/10.1016/j.envsoft.2020.104719)
+- Lin J, Li X, Wen Y, He P. Modeling urban land-use changes using a landscape-driven patch-based cellular automaton (LP-CA). CITIES 2023; 132. [DOI](https://doi.org/10.1016/j.cities.2022.103906)
+- Liu X, Ma L, Li X, Ai B, Li S, He Z. Simulating urban growth by integrating landscape expansion index (LEI) and cellular automata. INTERNATIONAL JOURNAL OF GEOGRAPHICAL INFORMATION SCIENCE 2014; 28: 148-163. [DOI](https://doi.org/10.1080/13658816.2013.831097)
+- Xu Q, Zhu AX, Liu J. Land-use change modeling with cellular automata using land natural evolution unit. CATENA 2023; 224: 106998. [DOI](https://doi.org/10.1016/j.catena.2023.106998)
