@@ -1,6 +1,6 @@
 # LECA-model
 Landscape metrics enhanced cellular automata model (LE-CA) Copyright (C) 2025 Wei Lin. This model use landscape metrics to simulate land use change.
-%Landscape metrics enhanced cellular automata model (LE-CA)
+# Landscape metrics enhanced cellular automata model (LE-CA)
 %Copyright (C) 2025 Wei Lin
 %Developer can be contacted at ecolinwei@outlook.com
 %This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or any later version.
