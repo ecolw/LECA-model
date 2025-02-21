@@ -32,6 +32,8 @@ Calibration involves adjusting model parameters (transition probabilities in the
 3. **GA_Markov**: The Markov chain model, optimized by a Genetic Algorithm (GA), predicts transitions between different land cover types. The GA fine-tunes the transition probabilities to enhance the accuracy of land use predictions, ensuring that the Markov matrix reflects realistic changes over time.
 4. **Simulation**: The final simulation module integrates the ANN, landscape metrics, and GA-optimized Markov chain to simulate future land use changes. The CA model runs iteratively, applying transition probabilities to land cells, updating land cover based on the combined inputs, and generating predicted land use maps for future periods.
 
+Simply, run “GAmarkov.m” code.
+
 ---
 
 ### Validation
