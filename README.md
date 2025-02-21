@@ -9,22 +9,29 @@ This program is the source code of parallel LE-CA model based on Matlab.
 Here are the instructions for use.
 
 ## Preparation before model simulations
-(1) Install Matlab. Ensure you have the correct version of Matlab installed. You can download it from the MathWorks website or through your institution's license portal. Make sure the necessary toolboxes (e.g., Image Processing, Statistics, or GIS-related toolboxes) are installed.
-(2) Check initial files. Verify that all required data files (e.g., land classification maps, driving factors) are available and correctly formatted.
+### (1) Install Matlab. 
+Ensure you have the correct version of Matlab installed. You can download it from the MathWorks website or through your institution's license portal. Make sure the necessary toolboxes (e.g., Image Processing, Statistics, or GIS-related toolboxes) are installed.
+### (2) Check initial files. 
+Verify that all required data files (e.g., land classification maps, driving factors) are available and correctly formatted.
 
 Calibration and validation are crucial steps in ensuring that a model provides accurate and reliable predictions.
 ## Calibration
 This model structure is updated from previous land use change simulation modeling studies by incorporating the influence of landscape metrics. A comprehensive explanation of how this model works can also be found in previous studies (insert). The core components of the LE-CA model, including landscape metrics, Markov chain and Genetic algorithm. 
 Calibration involves adjusting model parameters (transition probabilities in the Markov chain) to better match observed data. This process fine-tunes the model by comparing its outputs with historical land use data and making adjustments to improve prediction accuracy. During calibration
 The following section provides a general explanation of each main module.
-(1) Artificial neural network (ANN) algorithm. The ANN algorithm is used to predict land suitability by processing spatial driving factors (e.g., distance to rivers, slope, elevation). The model trains on historical land use data and driving factors to generate probability maps for future land use scenarios.
-(2) Landscape metrics. Landscape metrics quantify the structure and composition of the landscape. These metrics are integrated into the model to evaluate how spatial configuration and fragmentation influence land use changes. The metrics serve as inputs for the CA model to improve the simulation's ecological realism.
-(3) GA_Markov. The Markov chain model, optimized by a Genetic Algorithm (GA), predicts transitions between different land cover types. The GA fine-tunes the transition probabilities to enhance the accuracy of land use predictions, ensuring that the Markov matrix reflects realistic changes over time.
-(3) Simulation. The final simulation module integrates the ANN, landscape metrics, and GA-optimized Markov chain to simulate future land use changes. The CA model runs iteratively, applying transition probabilities to land cells, updating land cover based on the combined inputs, and generating predicted land use maps for future periods.
+### (1) Artificial neural network (ANN) algorithm. 
+The ANN algorithm is used to predict land suitability by processing spatial driving factors (e.g., distance to rivers, slope, elevation). The model trains on historical land use data and driving factors to generate probability maps for future land use scenarios.
+### (2) Landscape metrics. 
+Landscape metrics quantify the structure and composition of the landscape. These metrics are integrated into the model to evaluate how spatial configuration and fragmentation influence land use changes. The metrics serve as inputs for the CA model to improve the simulation's ecological realism.
+### (3) GA_Markov. 
+The Markov chain model, optimized by a Genetic Algorithm (GA), predicts transitions between different land cover types. The GA fine-tunes the transition probabilities to enhance the accuracy of land use predictions, ensuring that the Markov matrix reflects realistic changes over time.
+### (3) Simulation. 
+The final simulation module integrates the ANN, landscape metrics, and GA-optimized Markov chain to simulate future land use changes. The CA model runs iteratively, applying transition probabilities to land cells, updating land cover based on the combined inputs, and generating predicted land use maps for future periods.
 
 ## Validation
 Validation is the process of assessing the model's performance by testing it with independent data that was not used during the calibration phase. This step checks if the model can accurately predict land use changes in a different time period or spatial area.
-(1) Simulation. The simulation is run using the parameters and transition probabilities obtained during calibration, but this time, it is applied to independent data (land use data from a different year). The goal is to simulate future land use changes and compare the model's predictions with actual observed land use changes that were not part of the calibration set. This step helps to evaluate how well the model generalizes to new data and whether the predictions match real-world land use dynamics.
+### (1) Simulation. 
+The simulation is run using the parameters and transition probabilities obtained during calibration, but this time, it is applied to independent data (land use data from a different year). The goal is to simulate future land use changes and compare the model's predictions with actual observed land use changes that were not part of the calibration set. This step helps to evaluate how well the model generalizes to new data and whether the predictions match real-world land use dynamics.
 
 ## Run the simulation model
 After preparing all the files, make sure to update the paths in the following one locations: ensure that the file paths in the executive file (CA2.m) are correctly updated. This is crucial because the model needs to know where to find the input data files and where to save the results.
